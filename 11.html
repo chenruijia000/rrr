@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='jquery-3.1.1.min.js' type='text/javascript'></script>
+	<style>
+		#ss{
+			width: 300px;
+			height: 300px;
+			border:1px solid red;
+			margin:50px auto;
+			background: red;
+		}
+		#dd{
+			list-style-type: none;
+			overflow: hidden;
+		}
+		#dd li{
+			float:left;
+			margin-left: 10px;
+			width: 80px;
+			height: 80px;
+			border:1px solid red;
+			line-height: 80px;
+			text-align: center;
+		}
+		.qq{
+			background: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="ss"></div>
+	<ul id="dd">
+		<li>11</li>
+		<li>22</li>
+		<li>33</li>
+		<li>44</li>
+		<li>55</li>
+	</ul>
+
+	
+</body>
+    <script type='text/javascript'>
+    // jQuery('#ss').click(function(){
+    // 	$(this).css('background','blue');
+    // });
+    $('#dd li').bind('mouseover mouseout',function(){
+    		$(this).toggleClass('qq');
+    	});
+    // $(function(){
+    // 	alert(5);
+    // });
+    // $('#dd').eq(0).hover(function(){
+    // 	$(this).css('background','blue')},function(){
+    // 		$(this).css('background','red')
+    // 	});
+    // $('#dd li').eq(0).addClass('qq');
+    // $('#dd li').click(function(){
+    // 	var i=$('#dd li').index(this);
+    // 	$(this).addClass('qq').siblings().removeClass();
+    // 	$('li').eq(i).css({height:'100px',width:'100px'}).siblings().css();
+    // });
+
+    	
+    </script>
+</html>
